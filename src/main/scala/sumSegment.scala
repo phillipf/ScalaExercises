@@ -53,6 +53,15 @@ object sumSegment {
     val (sum1, sum2) = parallel(sumSegment2(a, p, 0, m),
       sumSegment2(a, p, m, a.length))
     power(sum1 + sum2, 1/p) }*/
+  /*def task(c: => A): Task[A]
+
+  trait Task[A] {
+    def join: A
+  }
+
+  def parallel [A,B](taska: => A, taskb: => B): (A,B) = {
+    val tb: Task[A] = task{ taskb }
+  }*/
 
 
   def pNormOnePart(a: Array[Int], p: Double) = {
